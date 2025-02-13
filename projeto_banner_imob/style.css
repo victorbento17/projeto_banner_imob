@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F2FFF6;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar {
+    background: #F2FFF6;
+    padding: 10px;
+    text-align: left;
+}
+
+.logo {
+    color: #429b67;
+    font-weight: lighter;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh; /* Ajusta dinamicamente em telas maiores */
+    padding: 5% 10%; /* Melhora a distribuição do conteúdo */
+}
+
+.hero {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero .content {
+    width: 100%;
+}
+
+.info h1 {
+    color: #000;
+    font-size: 45px;
+}
+
+.info h3 {
+    color: gray;
+    font-size: 1.6rem;
+}
+
+.tags span {
+    background: #ffffff;
+    color: gray;
+    padding: 5px 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.tags2 span {
+    background: #429b67;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.banner-image img {
+    width: 100%; /* Responsivo */
+    max-width: 500px; /* Limita o tamanho da imagem */
+    height: auto;
+    border-radius: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 10%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.stats div {
+    background: #F2FFF6;
+    color: #429b67;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 150px;
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .hero, .banner-image {
+        max-width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+}
